@@ -1,0 +1,773 @@
+HTML(Hyper Text Markup Lnguage):
+
+HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. 
+It defines the elements on a webpage—like headings, paragraphs, images, links, and more—using tags.
+
+Key Concepts:
+HyperText: Refers to links that connect different web pages.
+Markup Language: Means it uses tags to annotate content.
+
+Example of HTML:
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Page</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html> -->
+
+HTML Tag:
+An HTML tag is a code element used to define the structure and content of elements on a webpage. Tags are enclosed in 
+angle brackets and usually come in pairs: an opening tag and a closing tag.
+🔹 Basic Structure of an HTML Tag:
+<tagname> Content goes here </tagname>
+Opening tag: <tagname>
+Closing tag: </tagname>
+Content: Text or other tags between them 
+
+Basic HTML Page Structure:
+Here’s a simple basic HTML page to help you get started. It includes the essential structure and a few common tags:
+✅ Basic HTML Page Example:
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First HTML Page</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is a paragraph on my first web page.</p>
+  </body>
+</html> -->
+
+Explanation:
+<!DOCTYPE html>: Declares this is an HTML5 document.
+<html lang="en">: Root element, with language set to English.
+<head>: Contains meta info like title, character set, and viewport settings.
+<title>: Sets the browser tab title.
+<body>: Contains all the visible content (headings, text, links, images, etc.).
+
+
+Comments in HTML:
+HTML comments are used to add notes or explanations within your code that are not displayed in the web browser. 
+They're helpful for documentation, reminders, or temporarily disabling code.
+✅ Syntax: 
+<!-- This is a comment -->
+
+❓ Is HTML Case Sensitive?
+No, HTML is not case sensitive for tags and attributes. That means:
+<DIV> is the same as <div>
+HREF, href, and Href are treated the same 
+
+ HTML Attributes:
+Attributes in HTML provide extra information about elements. They're always specified in the opening tag and usually 
+come in name="value" pairs.
+✅ Basic Syntax:
+<tagname attribute="value">Content</tagname>
+Common HTML Attributes:
+Attribute	Description	Example
+id:  	Unique identifier for the element	<div id="main">
+class:	Assigns one or more class names (for CSS/JS)	<p class="intro">
+style:	Inline CSS styling	<h1 style="color:blue;">
+href:	URL for links	<a href="https://example.com">
+src	Source file for images or media	<img src="photo.jpg">
+alt	Alternative text for images	<img alt="A description">
+title:	Tooltip text on hover	<p title="Hover text">
+target:	Specifies where to open a linked document	<a target="_blank">
+disabled:	Disables a form element	<input disabled>
+value:	Sets value for form inputs	<input value="Hello">
+name:	Names a form element	<input name="email">
+type:	Specifies the input type	<input type="text"> 
+<a href="https://openai.com" target="_blank" title="Visit OpenAI">
+  OpenAI Website
+</a>
+
+HTML Heading Tags:
+Heading tags in HTML are used to define titles or headings on a webpage. They range from <h1> to <h6>, with <h1> 
+    being the most important and <h6> the least.
+✅ Available Heading Tags:
+Tag	Purpose	Display Style
+<h1>	Main page title	Largest, bold
+<h2>	Section title	Slightly smaller
+<h3>	Subsection title	Medium size
+<h4>	Smaller subsection title	Smaller than <h3>
+<h5>	Minor heading	Smaller
+<h6>	Least important heading	Smallest, still bold 
+
+HTML Anchor Tag (<a>) — Creating Links:
+The anchor tag <a> is used in HTML to create hyperlinks, which allow users to click and navigate to another page, 
+website, or section of the same page.
+✅ Basic Syntax:
+<a href="URL">Link Text</a>
+href (Hypertext REFerence): The URL or path the link points to
+Link Text: The clickable text shown to users
+<a href="https://www.openai.com">Visit OpenAI</a> 
+
+HTML <img> Tag – Displaying Images:
+The <img> tag in HTML is used to embed images in a webpage. It's a self-closing tag, meaning it doesn't have a separate 
+closing tag.
+✅ Basic Syntax: 
+<img src="image.jpg" alt="Description of image">
+src:  (source): The URL or path to the image file
+alt:  (alternative text): Describes the image if it can't be displayed (important for accessibility and SEO)
+Example: 
+<img src="https://via.placeholder.com/150" alt="Placeholder image">
+This displays a placeholder image 150x150 pixels. 
+
+Common Attributes:
+Attribute	Description	Example
+src	URL or file path to the image	src="images/photo.jpg"
+alt	Text shown if image doesn't load	alt="A cat on a sofa"
+width	Width of the image (in px or %)	width="300" or width="50%"
+height	Height of the image	height="200"
+title	Tooltip text on hover	title="This is a cat"
+loading	Lazy load behavior (lazy, eager, auto)	loading="lazy"
+
+Height and Width in HTML — Controlling Element Size:
+The **height** and **width** attributes (or CSS properties) are used to set the size of elements, most commonly images, 
+videos, and some containers like <div>.
+✅ In the <img> Tag:
+You can set image dimensions directly using HTML attributes: 
+<img src="cat.jpg" alt="A cat" width="300" height="200">
+width="300" sets the width to 300 pixels
+height="200" sets the height to 200 pixels
+These values are in pixels by default (unless styled via CSS). 
+
+The <br> Tag in HTML (Line Break):
+The <br> tag in HTML is used to create a line break within text. It forces the content to move to the next line, 
+similar to pressing Enter on a keyboard in a word processor.
+The <br> tag is a self-closing tag, meaning it doesn't require an end tag (</br>).
+✅ Basic Syntax: 
+<p>This is the first line.<br>This is the second line.</p>
+Example: 
+<p>Welcome to my website.<br>Here is some more text on a new line.</p>
+Output:
+Welcome to my website.
+Here is some more text on a new line. 
+
+HTML Tags for Bold, Italic, and Underline Text:
+In HTML, you can use specific tags to style text as bold, italic, or underlined. While these tags are still valid, 
+modern web practices suggest using CSS for styling to improve accessibility and flexibility.
+✅ Bold Text – <b> and <strong>
+<b>: Makes text bold without implying any special importance or emphasis. 
+<p>This is <b>bold</b> text.</p>
+✅ Italic Text – <i> and <em>
+<i>: Makes text italic without implying any special emphasis. 
+<p>This is <i>italic</i> text.</p>
+ ✅ Underline Text – <u>
+<u>: Makes text underlined. Historically used for emphasis, it is now typically used for specific cases, like marking 
+URLs or errors. 
+<p>This is <u>underlined</u> text.</p>
+
+ HTML <big> and <small> Tags – Sizing Text:
+The <big> and <small> tags in HTML are used to change the size of text, but they are not often used in modern web 
+development, as CSS provides more flexible and powerful ways to control text size. However, they still have historical 
+and practical use.
+✅ <big> Tag – Makes Text Larger:
+The <big> tag is used to make text larger than the surrounding text.
+Example: 
+<p>This is <big>big</big> text.</p>
+
+✅ <small> Tag – Makes Text Smaller
+The <small> tag is used to make text smaller than the surrounding text. It's often used for fine print or disclaimers. 
+<p>This is <small>small</small> text.</p>
+
+The <hr> Tag in HTML — Horizontal Rule:
+The <hr> tag is used to create a horizontal line or rule that visually separates content. It's often used to represent a
+thematic break in the content, such as dividing sections of a webpage or indicating a change in topic.
+✅ Basic Syntax:
+<hr>
+The <hr> tag is self-closing and does not need a closing tag (</hr>).
+Example: 
+<p>This is the first section of content.</p>
+<hr>
+<p>This is the second section of content, separated by a horizontal line.</p>
+
+Subscript and Superscript Tags in HTML:
+HTML provides specific tags to display text as subscript and superscript. These are typically used in mathematical 
+expressions, chemical formulas, and other scientific or technical contexts.
+
+✅ Subscript – <sub> Tag
+The <sub> tag is used to display text below the baseline, such as in chemical formulas or mathematical expressions 
+    (e.g., H₂O or x₁).
+Example:
+<p>Water molecule: H<sub>2</sub>O</p>
+Output:
+Water molecule: H₂O
+
+✅ Superscript – <sup> Tag
+The <sup> tag is used to display text above the baseline, such as in exponents or footnotes (e.g., x² or 5ⁿ).
+Example:
+<p>Exponent: 2<sup>3</sup> = 8</p>
+Output:
+Exponent: 2³ = 8
+This represents the superscript "³" in the mathematical expression for powers. 
+
+The <pre> Tag in HTML — Preformatted Text:
+The <pre> tag is used to display preformatted text in HTML. It preserves both whitespace (spaces, tabs) and line breaks, 
+    which is useful when you want to display text exactly as it is typed, such as code or ASCII art.
+✅ Basic Syntax:
+<pre>
+This    text    preserves
+  spaces,  line breaks,
+and tabs.
+</pre>
+
+HTML <header>, <footer>, and <main> Tags – Structuring Content:
+In HTML5, new semantic elements like <header>, <footer>, and <main> were introduced to improve the structure of web pages
+and make content more meaningful. These tags help define the layout and organization of a webpage, making it easier for 
+both developers and search engines to understand the structure.
+
+✅ <header> Tag:
+The <header> tag represents the introductory content or navigation for a page or section. It typically contains elements like:
+Site logos
+Navigation menus
+Search forms
+Headings
+Example:
+<header>
+  <h1>Welcome to My Website</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+✅ <footer> Tag:
+The <footer> tag represents the footer content of a page or section. It typically contains:
+Copyright information
+Contact information
+Links to privacy policy, terms of service, etc.
+Social media links
+Sitemap links
+Example:
+<footer>
+  <p>&copy; 2025 My Website. All rights reserved.</p>
+  <ul>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</footer>
+
+✅ <main> Tag:
+The <main> tag represents the main content of the document. It should contain the primary content that is unique to the 
+page (excluding repeated content like headers, footers, and sidebars). There should only be one <main> tag per page.
+Example:
+<main>
+  <article>
+    <h2>My Blog Post</h2>
+    <p>This is the main content of the blog post...</p>
+  </article>
+</main>
+
+✅ Common Tags Inside <main>:
+You can include:
+Tag	Purpose
+<section>	Divides content into sections (with headings)
+<article>	Self-contained content (blog post, news, etc.)
+<div>	Generic container for layout and styling
+<h1>–<h6>	Headings
+<p>	Paragraphs
+<img>	Images
+<ul>, <ol>	Lists
+<form>	Forms
+<table>	Tables
+<video>, <audio>	Media elements
+Example
+<main>
+  <h1>Welcome to Our Blog</h1>
+  <section>
+    <h2>Latest Article</h2>
+    <article>
+      <h3>Why HTML5 Matters</h3>
+      <p>HTML5 introduces semantic elements like <code>&lt;main&gt;</code> that improve structure and accessibility.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Subscribe</h2>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+</main>
+
+HTML <article> Tag – Example and Explanation:
+The <article> tag is used for self-contained content that makes sense on its own — like a blog post, news article, 
+forum post, or user comment. Each <article> can stand independently and might be reused elsewhere, such as in an RSS 
+feed or search results.
+✅ Simple Example:
+<article>
+  <h2>10 Tips for Learning HTML</h2>
+  <p>HTML is the foundation of all web pages. Start by learning the basic tags like &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, and &lt;p&gt;.</p>
+  <p>Practice regularly, and soon you'll build complete webpages with ease!</p>
+  <p><small>Published on May 21, 2025 by Jane Doe</small></p>
+</article>
+Example Inside a Blog Layout:
+<main>
+  <h1>Latest Blog Posts</h1>
+ <article>
+    <h2>Understanding the HTML <code>&lt;article&gt;</code> Tag</h2>
+    <p>The &lt;article&gt; tag defines content that is independent and reusable, like blog posts or news stories.</p>
+    <p><small>By John Smith – May 21, 2025</small></p>
+  </article>
+
+  <article>
+    <h2>Why Semantic HTML Matters</h2>
+    <p>Semantic elements like &lt;article&gt;, &lt;section&gt;, and &lt;aside&gt; improve SEO, accessibility, and code clarity.</p>
+    <p><small>By Sarah Lee – May 20, 2025</small></p>
+  </article>
+</main>
+
+Open a Link in a New Tab Using the <a> Tag:
+To open a link in a new tab, you use the target="_blank" attribute inside the <a> (anchor) tag.
+✅ Basic Syntax:
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+What it does:
+When clicked, the link will open in a new browser tab instead of replacing the current page.
+Complete Safe Example:
+<a href="https://www.openai.com" target="_blank" rel="noopener noreferrer">
+  Visit OpenAI in a new tab
+</a>
+
+<img> Tag — Embedding Images in :
+The <img> tag is used to embed an image from a file or URL into an HTML page.
+✅ It is a self-closing (void) tag, meaning it doesn’t need a closing tag like </img>.
+✅ Basic Syntax:
+<img src="image.jpg" alt="Description of the image">
+Attributes:
+Attribute	Purpose
+src (source)	The path or URL of the image
+alt (alternative text)	Text shown if the image can’t load (important for accessibility)
+Example 1: Displaying a Local Image
+<img src="logo.png" alt="Company Logo">
+Loads an image named logo.png from the same folder as your HTML file.
+Example 2: Displaying an Image from the Web
+<img src="https://www.example.com/image.jpg" alt="Sample Image">
+Loads an image from an external website.
+Example 3: Setting Image Size
+You can control image dimensions using the width and height attributes:
+<img src="image.jpg" alt="Resized image" width="300" height="200">
+
+HTML <div> Tag — The Generic Container:
+The <div> tag in HTML stands for "division" and is a generic container used to group and organize other HTML elements. 
+It doesn't have any visual effect by itself but is commonly used with CSS or JavaScript to style, layout, or manipulate sections of a webpage.
+✅ Basic Syntax:
+<div>
+  <!-- Content goes here -->
+</div>
+Example:
+<div>
+  <h2>About Us</h2>
+  <p>We are a team of passionate developers building great websites.</p>
+</div>
+This creates a logical block of content that you can style with CSS or target with JavaScript.
+
+HTML <span> Tag – Inline Text Container
+The <span> tag in HTML is an inline container used to apply styles or interact with a part of text or inline elements without affecting layout. 
+It doesn’t change the appearance on its own — it’s mainly used with CSS or JavaScript.
+✅ Basic Syntax:
+<span>Some text</span>
+🔹 Difference Between <div> and <span>:
+Tag	Type	Use For
+<div>	Block	Structuring/layout (sections, boxes)
+<span>	Inline	Styling/selecting text within a line
+ Example 1: Coloring Part of Text
+<p>This is a <span style="color: red;">red</span> word.</p>
+Output:
+This is a red word.
+
+Lists in HTML – Ordered, Unordered & Definition Lists:
+HTML provides three main types of lists to organize content clearly:
+
+1️⃣ Unordered List (<ul>)
+Used when the order doesn’t matter, like a list of items or features. It uses bullets by default.
+✅ Syntax:
+<ul>
+  <li>Apples</li>
+  <li>Bananas</li>
+  <li>Cherries</li>
+</ul>
+Output:
+Apples
+Bananas
+Cherries
+
+2️⃣ Ordered List (<ol>)
+Used when the order matters, like steps in instructions. It uses numbers or letters.
+✅ Syntax:
+<ol>
+  <li>Preheat the oven</li>
+  <li>Mix ingredients</li>
+  <li>Bake for 30 minutes</li>
+</ol>
+Output:
+1. Preheat the oven
+2. Mix ingredients
+3.Bake for 30 minutes
+
+
+3️⃣ Definition List (<dl>)
+Used for terms and descriptions, like in glossaries or FAQs.
+
+✅ Syntax:
+<dl>
+  <dt>HTML</dt>
+  <dd>A markup language for creating web pages.</dd>
+
+  <dt>CSS</dt>
+  <dd>A stylesheet language for styling HTML elements.</dd>
+</dl>
+
+Nested Lists in HTML – Explained with Examples:
+Nested lists are lists placed inside a list item (<li>) of another list. They are useful for creating:
+Multi-level menus
+Outlines
+Category/subcategory structures
+
+✅ 1. Nested Unordered List (<ul> inside <ul>)
+<ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+  </li>
+  <li>Vegetables
+    <ul>
+      <li>Carrot</li>
+      <li>Spinach</li>
+    </ul>
+  </li>
+</ul>
+
+🟢 Output:
+Fruits
+Apple
+Banana
+Cherry
+
+Vegetables
+Carrot
+Spinach
+
+✅ 2. Nested Ordered List (<ol> inside <ol>)
+<ol>
+  <li>Install Software
+    <ol>
+      <li>Download Installer</li>
+      <li>Run Setup</li>
+      <li>Follow Instructions</li>
+    </ol>
+  </li>
+  <li>Start Application</li>
+</ol>
+🟢 Output:
+Install Software
+Download Installer
+Run Setup
+Follow Instructions
+Start Application
+
+✅ 3. Mixed Nesting (<ul> inside <ol> or vice versa)
+<ol>
+  <li>Web Languages
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </li>
+  <li>Server Languages
+    <ul>
+      <li>PHP</li>
+      <li>Python</li>
+    </ul>
+  </li>
+</ol>
+🟢 Output:
+1. Web Languages
+1.HTML
+2.CSS
+3.JavaScript
+
+2.Server Languages
+PHP
+Python
+
+HTML Tables – Structure, Syntax, and Examples:
+HTML tables are used to organize data into rows and columns, just like in a spreadsheet.
+✅ Basic Table Structure
+A simple table with headers and data rows:
+<table>
+  <caption>Table Caption</caption>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Col 1</td>
+    <td>Row 1, Col 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Col 1</td>
+    <td>Row 2, Col 2</td>
+  </tr>
+</table>
+<table>: The container element for the entire table.
+
+<tr>: Defines a row in the table.
+<th>: Defines a table header cell (bold and centered by default).
+<td>: Defines a data cell.
+
+Key HTML Table Tags:
+Tag	Description
+<table>	Defines the table container
+<caption>	Provides a title/description for the table (optional)
+<tr>	Defines a table row
+<th>	Defines a header cell in a table (bold, centered)
+<td>	Defines a data cell in a table
+<thead>	Groups the header rows (optional)
+<tbody>	Groups the body rows (optional)
+<tfoot>	Groups the footer rows (optional)
+colspan	Makes a cell span multiple columns
+rowspan	Makes a cell span multiple rows
+
+Example with <caption>, <thead>, <tbody>, and <tfoot>
+<table border="1">
+  <caption>Student Marks Table</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>92</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Total</td>
+      <td>177</td>
+    </tr>
+  </tfoot>
+</table>
+<caption>: Adds a title or description to the table, placed above the table. By default, it's centered.
+
+<thead>: Groups the header row(s).
+<tbody>: Groups the body of the table.
+<tfoot>: Groups the footer row(s), often used for summaries or totals.
+
+✅ Using colspan and rowspan:
+The colspan and rowspan attributes allow a cell to span multiple columns or rows.
+<table border="1">
+  <caption>Employee Info</caption>
+  <tr>
+    <th colspan="2">Employee Details</th>
+  </tr>
+  <tr>
+    <td rowspan="2">John</td>
+    <td>Manager</td>
+  </tr>
+  <tr>
+    <td>IT Department</td>
+  </tr>
+</table>
+colspan="2": Makes the cell span across two columns.
+rowspan="2": Makes the cell span across two rows.
+
+HTML Forms – Structure, Syntax, and Examples:
+HTML forms allow users to input data that can be sent to a server for processing. Forms are crucial for tasks like user registration, 
+login, searching, feedback, and much more.
+✅ Basic Form Structure:
+<form action="submit_form.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+Key Elements in a Form:
+<form>: Defines the form and its attributes.
+action: Specifies the URL where the form data will be sent when the form is submitted.
+method: Specifies the HTTP method (typically GET or POST).
+<label>: Describes the form field. It’s often paired with an id for better accessibility.
+<input>: Creates an interactive field where users can input data.
+type="text": For regular text.
+type="email": For email input.
+<input type="submit">: A button that submits the form.
+
+Common Form Elements:
+1. Text Input (<input type="text">)
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+2.Email Input (<input type="email">)
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+
+3.Password Input (<input type="password">)
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+
+4. Radio Buttons (<input type="radio">)
+<p>Gender:</p>
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+
+5.Checkboxes (<input type="checkbox">)
+<label for="subscribe">Subscribe to newsletter:</label>
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+
+6.Select Dropdown (<select>)
+<label for="country">Country:</label>
+<select id="country" name="country">
+  <option value="usa">USA</option>
+  <option value="canada">Canada</option>
+  <option value="uk">UK</option>
+</select>
+
+7.Text Area (<textarea>)
+<label for="message">Message:</label>
+<textarea id="message" name="message"></textarea>
+Submit Button (<input type="submit">)
+
+8. <input type="submit" value="Submit">
+
+✅ Complete Example with Multiple Form Elements:
+<form action="submit_form.php" method="POST">
+  <h2>Contact Us</h2>
+  
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+  
+  <label for="newsletter">Subscribe to newsletter:</label>
+  <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+Form Attributes:
+action: The URL to which the form data is sent when the form is submitted.
+Example: <form action="submit_form.php">
+method: The HTTP method to send data to the server.
+GET: Appends form data to the URL (visible in the browser).
+POST: Sends data in the body of the request (not visible in the URL).
+name: Name attribute of form elements that allows the server to recognize the data sent from the form.
+Example: <input type="text" name="username">
+required: Ensures the user fills out a particular field before submitting the form.
+
+<iframe> Tag in HTML – Embedding External Content
+The <iframe> tag in HTML is used to embed external content like websites, videos, maps, or documents within a webpage. It allows you to 
+display another HTML page inside the current page.
+✅ Basic Syntax of <iframe>:
+<iframe src="https://example.com" width="600" height="400"></iframe>
+src: The URL of the content to embed (this could be a webpage, video, map, etc.).
+width: Specifies the width of the embedded content.
+height: Specifies the height of the embedded content.
+✅ Example: Embedding a YouTube Video
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+frameborder="0": Removes the border around the iframe.
+allowfullscreen: Allows the iframe to be displayed in full-screen mode.
+
+Common Attributes for <iframe>:
+Attribute	                 Description
+src:                URL of the content to embed (required).
+width:       	    Specifies the width of the iframe.
+height:      	    Specifies the height of the iframe.
+frameborder: 	    Specifies whether or not to display a border (0 for no border, 1 for a border).
+allowfullscreen:	Allows the embedded content to be viewed in fullscreen mode.
+title:           	Provides an accessible title for the iframe content (important for accessibility).
+loading:         	Can be set to lazy to load iframe content only when it is visible in the viewport, improving performance.
+✅ Example: Embedding a Google Map
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.522080518813!2d-122.41941548468162!3d37.77492977975953!2m3!1f
+0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cbbe8821f%3A0x4d55b1058f57370!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1626346342635!
+5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<video> Tag in HTML – Embedding Video Content:
+The <video> tag in HTML is used to embed video content on a webpage, allowing users to watch videos directly without relying on third-party 
+plugins like Flash.
+✅ Basic Syntax of <video>:
+<video width="600" height="400" controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+width and height: Specify the dimensions of the video player.
+controls: Adds built-in video controls (play, pause, volume, etc.).
+<source>: Specifies the video file and its type.
+src: Path to the video file.
+type: The MIME type of the video (e.g., video/mp4, video/webm, video/ogg).
+
+✅ Video Formats:
+The <video> tag can support multiple video formats to ensure compatibility across different browsers.
+Format	MIME Type	Browser Support
+MP4	video/mp4	Most browsers
+WebM	video/webm	Modern browsers
+Ogg	video/ogg	Firefox, Opera
+To improve cross-browser compatibility, you can specify multiple <source> elements for different video formats.
+
+✅ Example: Multiple Video Formats
+<video width="600" height="400" controls>
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  <source src="video.ogv" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+This ensures that the browser can choose the best-supported video format.
+
+Common Attributes for <video> Tag:
+Attribute	                Description
+controls:        	Displays the built-in controls (play, pause, volume, etc.).
+autoplay:       	Makes the video start playing as soon as it's ready (optional).
+loop:           	Loops the video once it reaches the end (optional).
+muted:          	Starts the video with the sound muted (optional).
+poster:         	Specifies an image to display before the video starts playing (optional).
+preload:        	Specifies if and how the video should be loaded when the page loads (values: auto, metadata, none).
+
+✅ Example with autoplay, loop, muted, and poster:
+<video width="600" height="400" controls autoplay loop muted poster="thumbnail.jpg">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+
+
+
+   
+
+
+
+
+

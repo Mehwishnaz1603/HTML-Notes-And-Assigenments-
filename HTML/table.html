@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Student Information Table with Colspan & Rowspan</h2>
+
+    <table>
+        <caption>Student Data</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Student Name</th>
+                <th rowspan="2">Age</th>
+                <th colspan="2">Course Information</th>
+                <th rowspan="2">City</th>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>22</td>
+                <td>Computer Science</td>
+                <td>2nd Year</td>
+                <td>Karachi</td>
+            </tr>
+            <tr>
+                <td>Bob Smith</td>
+                <td>24</td>
+                <td>Electrical Engineering</td>
+                <td>3rd Year</td>
+                <td>Lahore</td>
+            </tr>
+            <tr>
+                <td>Charlie Brown</td>
+                <td>21</td>
+                <td>Civil Engineering</td>
+                <td>1st Year</td>
+                <td>Islamabad</td>
+            </tr>
+            <tr>
+                <td>David Williams</td>
+                <td>23</td>
+                <td>Business Administration</td>
+                <td>4th Year</td>
+                <td>Faisalabad</td>
+            </tr>
+            <tr>
+                <td>Eva Davis</td>
+                <td>20</td>
+                <td>Biology</td>
+                <td>2nd Year</td>
+                <td>Rawalpindi</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
